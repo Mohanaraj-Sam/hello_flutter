@@ -1,4 +1,6 @@
+import 'package:application1/screens/home.dart';
 import 'package:flutter/material.dart';
+
 
 void main() => runApp(new HelloFlutterApp());
  
@@ -10,19 +12,12 @@ class HelloFlutterApp extends StatelessWidget{
      debugShowCheckedModeBanner: false,
     title:"Hello FLutter App",
     home: Scaffold(
-      appBar:AppBar(title: Text("First App with Git")) ,
-      body : Material(
-        color:Colors.deepOrangeAccent,
-        child: Center(
-        child: Text(
-          "Hello Flutter",
-          textDirection: TextDirection.ltr,
-          style: TextStyle(color: Colors.white,fontSize: 36.0),
-
-        )
-        )
-      ),)
-      );
+      appBar: AppBar(
+        title: Text("My Flutter App with Git")
+      ),
+      body:Home(),
+      
+      ));
 
   }
 
