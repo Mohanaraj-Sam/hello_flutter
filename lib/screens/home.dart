@@ -8,7 +8,7 @@ class Home extends StatelessWidget{
       color: Colors.redAccent,
       child:Center(
         child:Text(
-          "Hello Flutter",
+          sayHello(),
           textDirection: TextDirection.ltr,
           style: TextStyle(color: Colors.white,fontSize: 36.0),
          
@@ -17,4 +17,24 @@ class Home extends StatelessWidget{
     );
   }
 
+}
+String sayHello(){
+  String hello;
+  DateTime now = new DateTime.now();// object to get current time
+  int hour = now.hour;
+  int minute = now.minute;
+  if(hour < 12){
+    hello = "Good Morning";
+
+  }
+  else if(hour < 18){
+    hello = "Good Afternoon";
+
+  }
+  else{
+    hello = "Good Evening";
+
+  }
+
+  return hello + " It is " + hour.toString() + " : " + minute.toString(); 
 }
