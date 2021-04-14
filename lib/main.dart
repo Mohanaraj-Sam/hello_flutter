@@ -10,7 +10,7 @@ class HelloFlutterApp extends StatelessWidget{
      debugShowCheckedModeBanner: false,
     title:"Hello FLutter App",
     home: Scaffold(
-      appBar:AppBar(title: Text("First App")) ,
+      appBar:AppBar(title: Text("First App with Git")) ,
       body : Material(
         color:Colors.deepOrangeAccent,
         child: Center(
