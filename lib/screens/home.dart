@@ -1,0 +1,20 @@
+import 'package:flutter/material.dart';
+
+
+class home extends StatelessWidget{
+  @override
+  Widget build(BuildContext context) {
+    return Material(
+      color: Colors.redAccent,
+      child:Center(
+        child:Text(
+          "Hello Flutter",
+          textDirection: TextDirection.ltr,
+          style: TextStyle(color: Colors.white,fontSize: 36.0),
+         
+        )
+      )
+    );
+  }
+
+}
